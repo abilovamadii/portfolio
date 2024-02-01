@@ -1,0 +1,604 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+nav {
+  color: orange;
+}
+nav:hover {
+  color: #ecd544;
+}
+
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+  cursor: pointer;
+}
+
+header .menu {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 80px;
+  left: 0%;
+  background-color: #212529;
+}
+header .menu .imgbox {
+  width: 140px;
+}
+header .menu nav a {
+  font-weight: 300;
+  margin-left: 30px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+header .menu nav a:hover {
+  cursor: pointer;
+  color: #ffc800;
+}
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    color: #979d9e;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: solid #5a5e65;
+    border-width: 1px;
+    border-radius: 6px;
+  }
+  header .menu .btn h1 {
+    margin-right: 6px;
+  }
+}
+@media (max-width: 576px) and (min-width: 280px) {
+  header .menu {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 280px) {
+  header .menu {
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  header .menu .imgbox {
+    margin-bottom: 10px;
+  }
+}
+
+#welcome {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+#welcome .box {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcome .box .textbox {
+  text-align: center;
+  color: white;
+}
+#welcome .box .textbox h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+#welcome .box .textbox h4 {
+  margin-bottom: 40px;
+  font-size: 90px;
+  font-weight: 800;
+}
+#welcome .box .btn {
+  background-color: #ffc800;
+  color: white;
+  padding: 18px 40px;
+  font-size: 22px;
+  font-weight: 700;
+}
+#welcome .box .btn h2 {
+  cursor: pointer;
+}
+#welcome .box .btn:hover {
+  background-color: #c28d07;
+}
+@media screen and (max-width: 455px) {
+  #welcome .textbox h3 {
+    padding: 95px 0 25px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #welcome .textbox h4 {
+    font-size: 68px;
+  }
+  #welcome .textbox .btn {
+    color: white;
+    font-size: 20px;
+    padding: 20px 45px;
+    background-color: #ffc800;
+  }
+  #welcome .textbox .btn h2 {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 576px) {
+  #welcome .box .textbox h3 {
+    font-size: 35px;
+  }
+  #welcome .box .textbox h4 {
+    font-size: 60px;
+    line-height: 1.3;
+  }
+}
+
+#services {
+  padding: 40px 0 60px;
+}
+#services .textbox {
+  text-align: center;
+}
+#services .textbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#services .textbox h2:hover {
+  cursor: text;
+}
+#services .textbox h4 {
+  color: #6a6a6a;
+  padding-bottom: 45px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-style: italic;
+}
+#services .icon {
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 28px 26px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .iconone {
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 29px 26px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .icontwo {
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffc800;
+  padding: 29px 36px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
+}
+#services .box, #services .textbox {
+  overflow: hidden;
+}
+#services .textbox h3 {
+  font-size: 27px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#services .textbox h6 {
+  font-size: 17px;
+  color: #6a6a6a;
+  line-height: 1.4;
+}
+#services .textbox h3:hover, #services .textbox h6:hover {
+  cursor: text;
+}
+@media screen and (max-width: 602px) {
+  #services .textbox h4 {
+    padding-bottom: 40px;
+  }
+  #services .textbox h6 {
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #services .textbox h6 {
+    margin-bottom: 30px;
+  }
+}
+
+#portfolio {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+#portfolio .textbox {
+  overflow: hidden;
+}
+#portfolio .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#portfolio .textbox h1:hover {
+  cursor: text;
+}
+#portfolio .textbox h4 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#portfolio .box {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+#portfolio .box .icon {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6b507;
+  opacity: 0%;
+  transition: 0.5s;
+  font-size: 50px;
+  color: #ffffff;
+  cursor: pointer;
+}
+#portfolio .box .icon i {
+  cursor: pointer;
+}
+#portfolio .box .icon:hover {
+  opacity: 90%;
+}
+#portfolio .box .imgbox {
+  position: relative;
+}
+#portfolio .box .textbox h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+#portfolio .box .textbox h3 {
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+  #portfolio .box {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#about {
+  padding: 100px 0;
+}
+#about .textbox {
+  overflow: hidden;
+}
+#about .textbox h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#about .textbox h1:hover {
+  cursor: text;
+}
+#about .textbox h4 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#about .box {
+  position: relative;
+}
+#about .box .textbox {
+  width: 41%;
+  padding: 0 20px 20px 20px;
+}
+#about .box .textbox h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#about .box .textbox p {
+  color: #6c757d;
+  margin: 10px 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+#about .box .imgbox {
+  position: absolute;
+  left: 300px;
+  width: 170px;
+  height: 170px;
+  border: solid #e9ecef;
+  border-width: 6px;
+  border-radius: 100%;
+}
+#about .boxfive {
+  width: 170px;
+  height: 170px;
+  border: solid #e9ecef;
+  border-width: 6px;
+  border-radius: 100%;
+  background-color: #ffc800;
+}
+#about .boxfive h5 {
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #about .box .imgbox {
+    width: 150px;
+    height: 150px;
+  }
+  #about .boxfive {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #about .box .imgbox {
+    width: 100px;
+    height: 100px;
+  }
+  #about .boxfive {
+    width: 100px;
+    height: 100px;
+  }
+  #about .boxfive h5 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+}
+@media (max-width: 767px) {
+  #about .box {
+    margin: 0;
+  }
+  #about .box .imgbox {
+    width: 80px;
+    height: 80px;
+    left: 0%;
+  }
+  #about .box .textbox {
+    margin-left: 80px;
+    width: 100%;
+  }
+  #about .boxfive {
+    width: 80px;
+    height: 80px;
+  }
+  #about .boxfive h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+#team {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+#team .textbox {
+  overflow: hidden;
+}
+#team .textbox h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#team .textbox h1:hover {
+  cursor: text;
+}
+#team .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#team .box {
+  overflow: hidden;
+}
+#team .box .imgbox {
+  width: 220px;
+  border: solid #e9ecef;
+  border-radius: 50%;
+  border-width: 8px;
+  margin-bottom: 20px;
+}
+#team .box .textbox h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 0 10px;
+}
+#team .box .textbox h4 {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+#team .box .icon, #team .box .facebook {
+  background-color: #212529;
+  color: #fff;
+  font-size: 14px;
+  padding: 14px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#team .box .icon:hover, #team .box .facebook:hover {
+  opacity: 70%;
+}
+#team .box .icon i, #team .box .facebook i {
+  cursor: pointer;
+}
+#team .box .facebook {
+  padding: 14px 16px 14px 16px;
+}
+#team .demotext p {
+  width: 70%;
+  color: #6c757d;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+#facebook {
+  padding: 50px 0;
+}
+#facebook .box .imgbox {
+  width: 120px;
+}
+#facebook .box .microsoft {
+  width: 200px;
+}
+#facebook .box .ibm {
+  width: 100px;
+}
+@media screen and (max-width: 768px) {
+  #facebook .box .imgbox {
+    margin-bottom: 30px;
+  }
+}
+
+#website {
+  padding: 30px 0;
+}
+#website .menu a {
+  color: #535151;
+  font-size: 17px;
+}
+#website .menu span {
+  margin: 0 20px;
+}
+#website .menu ul {
+  display: flex;
+  justify-content: center;
+}
+#website .menu ul li {
+  margin: 0 10px;
+}
+#website .menu ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #1f1e1e;
+  color: white;
+}
+#website .menu ul li .icon:hover {
+  background-color: #424649;
+  transition: 0.5s;
+}
+#website .menu ul li .icon i {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #website .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #website .menu ul {
+    margin: 15px 0;
+  }
+}
+
+#contact {
+  padding: 65px 0;
+  background-color: #212529;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+}
+#contact .textbox {
+  text-align: center;
+}
+#contact .textbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  padding: 65px 0 20px;
+}
+#contact .textbox h3 {
+  color: #757575;
+  font-style: italic;
+  padding-bottom: 35px;
+}
+#contact .box {
+  padding-bottom: 35px;
+}
+#contact .box .add input {
+  color: rgba(0, 0, 0, 0.1764705882);
+  font-size: 18px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 700;
+}
+#contact .demo input {
+  font-size: 20px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.1764705882);
+  font-weight: 700;
+  padding: 18px;
+  padding-bottom: 195px;
+}
+#contact .box .btn {
+  opacity: 0.5;
+  padding: 20px 55px;
+  background-color: #c19e1d;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 999px) {
+  #contact {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  }
+}
+@media screen and (max-width: 766px) {
+  #contact .box .btn {
+    margin: 56px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
